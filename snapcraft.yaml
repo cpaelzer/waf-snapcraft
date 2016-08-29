@@ -1,11 +1,14 @@
 name: wafdemo
 version: 0.1
 summary: out of tree waf demo for snapcraft
-description: not functional, but helping to host waf bits out of snapcraft tree
+description: host waf integration test bits out of snapcraft tree
 confinement: strict
 
 # this provides the c based demo of waf
 parts:
-  waf-project:
-    plugin: dump
+  wafdemo:
+    plugin: waf
     source: .
+    configflags:
+      - --progress
+      - --verbose
