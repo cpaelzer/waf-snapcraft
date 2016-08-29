@@ -1,2 +1,2 @@
 # waf-snapcraft
-parts of the waf build environment for reuse in snapcraft
+parts of the waf demo code for reuse in snapcraft e.g. integration tests
